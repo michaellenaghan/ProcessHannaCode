@@ -234,7 +234,7 @@ class TextformatterHannaCode extends Textformatter implements ConfigurableModule
 			}
 			$originalLen = strlen($original);
 			$originalPos = strpos($this->value, $original);
-			if ($originalPos != false) {
+			if ($originalPos !== false) {
 				$this->value = substr_replace($this->value, $replacement, $originalPos, $originalLen); 
 			}
 		}
